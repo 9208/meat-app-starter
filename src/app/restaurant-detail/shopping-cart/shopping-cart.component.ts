@@ -12,6 +12,7 @@ export class ShoppingCartComponent implements OnInit {
   ngOnInit() {
   }
   items(): any[] {
+      console.log(this.shoppingCartService.items);
     return this.shoppingCartService.items;
   }
   clear() {
